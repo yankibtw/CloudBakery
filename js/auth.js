@@ -7,30 +7,29 @@ document.addEventListener("DOMContentLoaded", function () {
         function applyPhoneMask(input) {
             let value = input.value.replace(/[^\d]/g, "");
 
+            if (value.startsWith("8")) {
+                value = "7" + value.slice(1);
+            }
+
             if (!value.startsWith("7")) {
                 value = "7" + value;
             }
 
-            let result = "";
-            let mask = "+7 ___ ___-__-__";
-            let current = 0;
+            value = value.slice(0, 11);
+            let result = "+7 ";
+            let pattern = value.slice(1);
 
-            for (let char of mask) {
-                if (current >= value.length) break;
-                if (char === "_") {
-                    result += value[current];
-                    current++;
-                } else {
-                    result += char;
-                }
-            }
-
-            const start = input.selectionStart;
-            const end = input.selectionEnd;
+            if (pattern.length > 0) result += pattern.slice(0, 3);
+            if (pattern.length >= 4) result += " " + pattern.slice(3, 6);
+            if (pattern.length >= 7) result += "-" + pattern.slice(6, 8);
+            if (pattern.length >= 9) result += "-" + pattern.slice(8, 10);
 
             input.value = result;
 
-            input.setSelectionRange(start, end);
+            setTimeout(() => {
+                const pos = input.value.length;
+                input.setSelectionRange(pos, pos);
+            }, 0);
         }
 
         phoneInput.addEventListener("input", (e) => {
@@ -40,25 +39,29 @@ document.addEventListener("DOMContentLoaded", function () {
         phoneInput.addEventListener("focus", (e) => {
             if (!e.target.value || e.target.value === "+7 ") {
                 e.target.value = "+7 ";
-                e.target.setSelectionRange(3, 3);
             }
+            setTimeout(() => {
+                const pos = e.target.value.length;
+                e.target.setSelectionRange(pos, pos);
+            }, 0);
         });
 
         phoneInput.addEventListener("click", (e) => {
-            if (!e.target.value || e.target.value === "+7 ") {
-                e.target.setSelectionRange(3, 3);
-            }
+            setTimeout(() => {
+                const pos = e.target.value.length;
+                e.target.setSelectionRange(pos, pos);
+            }, 0);
         });
 
         phoneInput.addEventListener("keydown", (e) => {
             const value = e.target.value;
             const pos = e.target.selectionStart;
 
-            if ((pos < 3 || pos > value.length) && e.key !== "Backspace" && e.key !== "ArrowLeft" && e.key !== "ArrowRight") {
+            if ((pos < 3 || pos > value.length) && !["Backspace", "ArrowLeft", "ArrowRight"].includes(e.key)) {
                 e.preventDefault();
             }
 
-            if ((e.key === "Backspace" || e.key === "Delete") && value.replace(/[^\d]/g, "").length <= 2) {
+            if (["Backspace", "Delete"].includes(e.key) && value.replace(/[^\d]/g, "").length <= 1) {
                 setTimeout(() => {
                     e.target.value = "+7 ";
                     e.target.setSelectionRange(3, 3);
@@ -68,20 +71,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
         phoneInput.addEventListener("paste", (e) => {
             e.preventDefault();
-            const pastedText = e.clipboardData.getData("text/plain");
-            const cleaned = pastedText.replace(/[^\d]/g, "");
+            const pastedText = e.clipboardData.getData("text/plain").replace(/[^\d]/g, "");
+            let value = pastedText;
 
-            const currentValue = phoneInput.value.replace(/[^\d]/g, "");
-            const startPos = phoneInput.selectionStart;
-            const endPos = phoneInput.selectionEnd;
-
-            const newValue = currentValue.slice(0, startPos) + cleaned + currentValue.slice(endPos);
-
-            phoneInput.value = "";
-            for (let i = 0; i < newValue.length; i++) {
-                phoneInput.value += newValue[i];
-                applyPhoneMask(phoneInput);
+            if (value.startsWith("8")) {
+                value = "7" + value.slice(1);
             }
+
+            if (!value.startsWith("7")) {
+                value = "7" + value;
+            }
+
+            value = value.slice(0, 11);
+            phoneInput.value = "+7 ";
+            phoneInput.value += value.slice(1);
+            applyPhoneMask(phoneInput);
         });
     }
 
@@ -90,37 +94,31 @@ document.addEventListener("DOMContentLoaded", function () {
         const phone = phoneInputEl.value.replace(/[^\d]/g, "");
 
         if (!phone) {
-            window.parent.postMessage(
-                {
-                    action: "show-notification",
-                    payload: {
-                        message: `Введите номер телефона!`,
-                        type: "error"
-                    }
-                },
-                "*"
-            );
+            window.parent.postMessage({
+                action: "show-notification",
+                payload: {
+                    message: `Введите номер телефона!`,
+                    type: "error"
+                }
+            }, "*");
             return;
         }
 
         if (!/^7\d{10}$/.test(phone)) {
-            window.parent.postMessage(
-                {
-                    action: "show-notification",
-                    payload: {
-                        message: `Введите корректный номер!\nФормат: +7 999 999-99-99`,
-                        type: "error"
-                    }
-                },
-                "*"
-            );
+            window.parent.postMessage({
+                action: "show-notification",
+                payload: {
+                    message: `Введите корректный номер!\nФормат: +7 999 999-99-99`,
+                    type: "error"
+                }
+            }, "*");
             return;
         }
 
         const code = Math.floor(1000 + Math.random() * 9000);
 
         try {
-            const response = await fetch("https://684e7f07f0c9c9848d284a6a.mockapi.io/api/vs1/send-code",  {
+            const response = await fetch("https://684e7f07f0c9c9848d284a6a.mockapi.io/api/vs1/send-code", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ phone, code, success: true, message: "Код успешно отправлен" })
@@ -129,16 +127,13 @@ document.addEventListener("DOMContentLoaded", function () {
             const result = await response.json();
 
             if (result.success) {
-                window.parent.postMessage(
-                    {
-                        action: "show-notification",
-                        payload: {
-                            message: `Код отправлен!\n(Для теста: ${code})`,
-                            type: "success"
-                        }
-                    },
-                    "*"
-                );
+                window.parent.postMessage({
+                    action: "show-notification",
+                    payload: {
+                        message: `Код отправлен!\n(Для теста: ${code})`,
+                        type: "success"
+                    }
+                }, "*");
 
                 sessionStorage.setItem("auth_phone", phone);
                 sessionStorage.setItem("auth_code", code);
@@ -148,16 +143,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("shown-phone").textContent = phoneInputEl.value;
             }
         } catch (err) {
-            window.parent.postMessage(
-                {
-                    action: "show-notification",
-                    payload: {
-                        message: `Произошла ошибка при отправке!`,
-                        type: "error"
-                    }
-                },
-                "*"
-            );
+            window.parent.postMessage({
+                action: "show-notification",
+                payload: {
+                    message: `Произошла ошибка при отправке!`,
+                    type: "error"
+                }
+            }, "*");
         }
     });
 
@@ -166,29 +158,23 @@ document.addEventListener("DOMContentLoaded", function () {
         const codeSent = sessionStorage.getItem("auth_code");
 
         if (userCode === codeSent) {
-            window.parent.postMessage(
-                {
-                    action: "show-notification",
-                    payload: {
-                        message: `Вы успешно авторизировались!`,
-                        type: "success"
-                    }
-                },
-                "*"
-            );
+            window.parent.postMessage({
+                action: "show-notification",
+                payload: {
+                    message: `Вы успешно авторизировались!`,
+                    type: "success"
+                }
+            }, "*");
             sessionStorage.setItem("isLoggedIn", "true");
             window.parent.postMessage({ action: "close-modal" }, "*");
         } else {
-            window.parent.postMessage(
-                {
-                    action: "show-notification",
-                    payload: {
-                        message: `Неверный код!`,
-                        type: "error"
-                    }
-                },
-                "*"
-            );
+            window.parent.postMessage({
+                action: "show-notification",
+                payload: {
+                    message: `Неверный код!`,
+                    type: "error"
+                }
+            }, "*");
         }
     });
 
