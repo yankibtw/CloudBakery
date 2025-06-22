@@ -1,0 +1,512 @@
+[
+  {
+    "id": "1",
+    "img": "https://pirogov.by/image/catalog/Tort/%20%D0%BA%D1%83%D1%81%D0%BE%D0%BA.jpg",
+    "name": "Торт Наполеон",
+    "description": "Слоёный торт с ванильным кремом",
+    "price": 550,
+    "composition": [
+      "Мука",
+      "Масло",
+      "Яйца",
+      "Молоко",
+      "Сахар"
+    ],
+    "weight": 800,
+    "calories": 420,
+    "category": "Торты"
+  },
+  {
+    "id": "2",
+    "img": "https://avatars.mds.yandex.net/i?id=f43d42a18582dfa10688ca5bbb1caf09584de8d2-8486579-images-thumbs&n=13",
+    "name": "Шоколадный торт",
+    "description": "Тёмный шоколад и крем",
+    "price": 620,
+    "composition": [
+      "Какао",
+      "Мука",
+      "Сахар",
+      "Молоко",
+      "Яйца"
+    ],
+    "weight": 750,
+    "calories": 450,
+    "category": "Торты"
+  },
+  {
+    "id": "3",
+    "img": "https://avatars.mds.yandex.net/i?id=60c19cfe8bf36ff3eccd05d59a41d908-5277098-images-thumbs&n=13",
+    "name": "Фруктовый торт",
+    "description": "С ягодами и сливочным кремом",
+    "price": 580,
+    "composition": [
+      "Мука",
+      "Ягоды",
+      "Крем",
+      "Сахар",
+      "Яйца"
+    ],
+    "weight": 700,
+    "calories": 400,
+    "category": "Торты"
+  },
+  {
+    "id": "4",
+    "img": "https://avatars.mds.yandex.net/i?id=330cc37b82b795fabe2a9738ecdeaa44d8f62d83-10851049-images-thumbs&n=13",
+    "name": "Торт мусс",
+    "description": "Лёгкий шоколадный мусс",
+    "price": 670,
+    "composition": [
+      "Шоколад",
+      "Сливки",
+      "Желатин",
+      "Сахар",
+      "Яйца"
+    ],
+    "weight": 600,
+    "calories": 390,
+    "category": "Торты"
+  },
+  {
+    "id": "5",
+    "img": "https://avatars.mds.yandex.net/i?id=72f427145af278b89023008ec9f95be5daa8daaf-3710093-images-thumbs&n=13",
+    "name": "Классический торт",
+    "description": "Ванильный бисквит с кремом",
+    "price": 500,
+    "composition": [
+      "Мука",
+      "Яйца",
+      "Молоко",
+      "Сахар",
+      "Ваниль"
+    ],
+    "weight": 750,
+    "calories": 410,
+    "category": "Торты"
+  },
+  {
+    "id": "6",
+    "img": "https://i.pinimg.com/736x/1c/28/6b/1c286be04de2d8d2c3b5c29e27e17f33.jpg",
+    "name": "Ванильный капкейк",
+    "description": "Нежный ванильный капкейк",
+    "price": 120,
+    "composition": [
+      "Мука",
+      "Ваниль",
+      "Яйца",
+      "Молоко",
+      "Сахар"
+    ],
+    "weight": 100,
+    "calories": 220,
+    "category": "Капкейки"
+  },
+  {
+    "id": "7",
+    "img": "https://avatars.mds.yandex.net/i?id=30234a76842847ee709d3e1da5007810a8b05d96-6475641-images-thumbs&n=13",
+    "name": "Шоколадный капкейк",
+    "description": "Капкейк с шоколадной глазурью",
+    "price": 130,
+    "composition": [
+      "Какао",
+      "Мука",
+      "Яйца",
+      "Молоко",
+      "Сахар"
+    ],
+    "weight": 110,
+    "calories": 230,
+    "category": "Капкейки"
+  },
+  {
+    "id": "8",
+    "img": "https://avatars.mds.yandex.net/i?id=0fb3947526d5e46c49d4bae7a800ec96a7d514e8-4902918-images-thumbs&n=13",
+    "name": "Капкейк с клубникой",
+    "description": "Свежая клубника и крем",
+    "price": 140,
+    "composition": [
+      "Мука",
+      "Клубника",
+      "Крем",
+      "Яйца",
+      "Сахар"
+    ],
+    "weight": 105,
+    "calories": 210,
+    "category": "Капкейки"
+  },
+  {
+    "id": "9",
+    "img": "https://avatars.mds.yandex.net/i?id=e076be0ebdf6f41d1d3e0b8d6e668e243effdc07-4828446-images-thumbs&n=13",
+    "name": "Лимонный капкейк",
+    "description": "Капкейк с лимонной ноткой",
+    "price": 135,
+    "composition": [
+      "Мука",
+      "Лимон",
+      "Яйца",
+      "Молоко",
+      "Сахар"
+    ],
+    "weight": 100,
+    "calories": 215,
+    "category": "Капкейки"
+  },
+  {
+    "id": "10",
+    "img": "https://avatars.mds.yandex.net/i?id=2a0000017a19691f3b42249f613a399a8572-2359126-images-thumbs&n=13",
+    "name": "Ред Велвет капкейк",
+    "description": "Красный бархат с кремом",
+    "price": 150,
+    "composition": [
+      "Мука",
+      "Какао",
+      "Краситель",
+      "Яйца",
+      "Сахар"
+    ],
+    "weight": 110,
+    "calories": 225,
+    "category": "Капкейки"
+  },
+  {
+    "id": "11",
+    "img": "https://avatars.mds.yandex.net/i?id=cd2066578d00618e75d929d9cebb9b8f4ead72fa-4884589-images-thumbs&n=13",
+    "name": "Розовые макаруны",
+    "description": "Классические макаруны с малиной",
+    "price": 90,
+    "composition": [
+      "Миндаль",
+      "Яйца",
+      "Сахар",
+      "Малина",
+      "Краситель"
+    ],
+    "weight": 30,
+    "calories": 100,
+    "category": "Макаруны"
+  },
+  {
+    "id": "12",
+    "img": "https://avatars.mds.yandex.net/i?id=dca4a07be91cc159b43958b77c7c8535139f5f3b-5176143-images-thumbs&n=13",
+    "name": "Шоколадные макаруны",
+    "description": "С шоколадным кремом",
+    "price": 95,
+    "composition": [
+      "Миндаль",
+      "Яйца",
+      "Какао",
+      "Сахар",
+      "Шоколад"
+    ],
+    "weight": 30,
+    "calories": 110,
+    "category": "Макаруны"
+  },
+  {
+    "id": "13",
+    "img": "https://avatars.mds.yandex.net/i?id=aa964a39858f5e1aac2f1e306ea35005fbb24c0d-5353579-images-thumbs&n=13",
+    "name": "Фисташковые макаруны",
+    "description": "С фисташковым кремом",
+    "price": 100,
+    "composition": [
+      "Миндаль",
+      "Яйца",
+      "Фисташки",
+      "Сахар",
+      "Крем"
+    ],
+    "weight": 30,
+    "calories": 115,
+    "category": "Макаруны"
+  },
+  {
+    "id": "14",
+    "img": "https://avatars.mds.yandex.net/i?id=fbe434850e770bad11be0f2399e81ad55d3f081e-5311641-images-thumbs&n=13",
+    "name": "Лимонные макаруны",
+    "description": "С лимонной начинкой",
+    "price": 90,
+    "composition": [
+      "Миндаль",
+      "Яйца",
+      "Лимон",
+      "Сахар",
+      "Крем"
+    ],
+    "weight": 30,
+    "calories": 105,
+    "category": "Макаруны"
+  },
+  {
+    "id": "15",
+    "img": "https://avatars.mds.yandex.net/i?id=facbfa0f8a7183e08f6e5f900c1ec9aa63aa72c2-6613205-images-thumbs&n=13",
+    "name": "Кофейные макаруны",
+    "description": "С кофе и шоколадом",
+    "price": 100,
+    "composition": [
+      "Миндаль",
+      "Яйца",
+      "Кофе",
+      "Шоколад",
+      "Сахар"
+    ],
+    "weight": 30,
+    "calories": 110,
+    "category": "Макаруны"
+  },
+  {
+    "id": "16",
+    "img": "https://avatars.mds.yandex.net/i?id=6135929d0fb7a10d178e180072e1781244317824-7882711-images-thumbs&n=13",
+    "name": "Пирожное эклер",
+    "description": "Эклер с ванильным кремом",
+    "price": 150,
+    "composition": [
+      "Мука",
+      "Молоко",
+      "Яйца",
+      "Крем",
+      "Шоколад"
+    ],
+    "weight": 120,
+    "calories": 350,
+    "category": "Пирожные"
+  },
+  {
+    "id": "17",
+    "img": "https://avatars.mds.yandex.net/i?id=a58656c43e977f5ea1ac99d6f78aaf0b13fcc836-9137660-images-thumbs&n=13",
+    "name": "Пирожное корзинка",
+    "description": "Корзинка с ягодами",
+    "price": 160,
+    "composition": [
+      "Мука",
+      "Ягоды",
+      "Крем",
+      "Сахар",
+      "Яйца"
+    ],
+    "weight": 130,
+    "calories": 360,
+    "category": "Пирожные"
+  },
+  {
+    "id": "18",
+    "img": "https://avatars.mds.yandex.net/i?id=a471a0986c9d3b858ff298a5b09b22429671e114-5487857-images-thumbs&n=13",
+    "name": "Пирожное с кремом",
+    "description": "Нежный крем и бисквит",
+    "price": 140,
+    "composition": [
+      "Мука",
+      "Крем",
+      "Яйца",
+      "Сахар",
+      "Ваниль"
+    ],
+    "weight": 110,
+    "calories": 340,
+    "category": "Пирожные"
+  },
+  {
+    "id": "19",
+    "img": "https://avatars.mds.yandex.net/i?id=1db106554093ff4d4bba8bd3585922cd32c71116-4268363-images-thumbs&n=13",
+    "name": "Шоколадное пирожное",
+    "description": "С шоколадной глазурью",
+    "price": 170,
+    "composition": [
+      "Мука",
+      "Шоколад",
+      "Яйца",
+      "Крем",
+      "Сахар"
+    ],
+    "weight": 120,
+    "calories": 370,
+    "category": "Пирожные"
+  },
+  {
+    "id": "20",
+    "img": "https://avatars.mds.yandex.net/i?id=1c03fc99c2a8d259195c05bda9579d07c7363464-5341088-images-thumbs&n=13",
+    "name": "Пирожное с фруктами",
+    "description": "Свежие фрукты и крем",
+    "price": 165,
+    "composition": [
+      "Мука",
+      "Фрукты",
+      "Крем",
+      "Яйца",
+      "Сахар"
+    ],
+    "weight": 115,
+    "calories": 355,
+    "category": "Пирожные"
+  },
+  {
+    "id": "21",
+    "img": "https://avatars.mds.yandex.net/i?id=5b0e39920016af7092d0a43a8f58b14607fc437b-9181373-images-thumbs&n=13",
+    "name": "Печенье шоколадное",
+    "description": "Хрустящее печенье с шоколадом",
+    "price": 90,
+    "composition": [
+      "Мука",
+      "Шоколад",
+      "Масло",
+      "Яйца",
+      "Сахар"
+    ],
+    "weight": 50,
+    "calories": 220,
+    "category": "Печенье"
+  },
+  {
+    "id": "22",
+    "img": "https://avatars.mds.yandex.net/i?id=1ecf090e0a291064807311ece427159c47996c14-7054524-images-thumbs&n=13",
+    "name": "Овсяное печенье",
+    "description": "Полезное овсяное печенье",
+    "price": 80,
+    "composition": [
+      "Овсянка",
+      "Мука",
+      "Мед",
+      "Масло",
+      "Яйца"
+    ],
+    "weight": 55,
+    "calories": 210,
+    "category": "Печенье"
+  },
+  {
+    "id": "23",
+    "img": "https://avatars.mds.yandex.net/i?id=c00729e334bbc4a833d3c2cbbfb9eb3050cb9ccb-8325116-images-thumbs&n=13",
+    "name": "Масляное печенье",
+    "description": "Традиционное масляное печенье",
+    "price": 85,
+    "composition": [
+      "Мука",
+      "Масло",
+      "Сахар",
+      "Яйца",
+      "Ваниль"
+    ],
+    "weight": 50,
+    "calories": 215,
+    "category": "Печенье"
+  },
+  {
+    "id": "24",
+    "img": "https://avatars.mds.yandex.net/i?id=c41d4d01def0350dd203f7bc8901b4d8-5280579-images-thumbs&n=13",
+    "name": "Ореховое печенье",
+    "description": "Печенье с орехами и шоколадом",
+    "price": 95,
+    "composition": [
+      "Мука",
+      "Орехи",
+      "Шоколад",
+      "Яйца",
+      "Сахар"
+    ],
+    "weight": 60,
+    "calories": 225,
+    "category": "Печенье"
+  },
+  {
+    "id": "25",
+    "img": "https://avatars.mds.yandex.net/i?id=4faa5a7d1d20fdbed41ded366f06c7f7cc4ee77a-11512952-images-thumbs&n=13",
+    "name": "Корица печенье",
+    "description": "Печенье с корицей и сахаром",
+    "price": 90,
+    "composition": [
+      "Мука",
+      "Корица",
+      "Сахар",
+      "Масло",
+      "Яйца"
+    ],
+    "weight": 55,
+    "calories": 220,
+    "category": "Печенье"
+  },
+  {
+    "id": "26",
+    "img": "https://avatars.mds.yandex.net/i?id=690ec0deaa45270d6eadb65525cc5715386d65db-5292406-images-thumbs&n=13",
+    "name": "Сырники",
+    "description": "Выпечка из творога с сахаром",
+    "price": 200,
+    "composition": [
+      "Творог",
+      "Яйца",
+      "Сахар",
+      "Мука",
+      "Ваниль"
+    ],
+    "weight": 150,
+    "calories": 350,
+    "category": "Выпечка"
+  },
+  {
+    "id": "27",
+    "img": "https://avatars.mds.yandex.net/i?id=5d01107e09f1b3da9453795b2f792baa4576a302-5381901-images-thumbs&n=13",
+    "name": "Булочка с маком",
+    "description": "Мягкая булочка с маковой начинкой",
+    "price": 180,
+    "composition": [
+      "Мука",
+      "Мак",
+      "Сахар",
+      "Масло",
+      "Яйца"
+    ],
+    "weight": 120,
+    "calories": 330,
+    "category": "Выпечка"
+  },
+  {
+    "id": "28",
+    "img": "https://avatars.mds.yandex.net/i?id=68b7689f0caa2cdea6d86c8eb89605da1eba9616-4411542-images-thumbs&n=13",
+    "name": "Круассан",
+    "description": "Слоёное тесто с маслом",
+    "price": 220,
+    "composition": [
+      "Мука",
+      "Масло",
+      "Сахар",
+      "Яйца",
+      "Молоко"
+    ],
+    "weight": 110,
+    "calories": 310,
+    "category": "Выпечка"
+  },
+  {
+    "id": "29",
+    "img": "https://avatars.mds.yandex.net/i?id=7c561c4027e571eb6fbd9797a2acb9c656545762-5235536-images-thumbs&n=13",
+    "name": "Пирог с ягодами",
+    "description": "Пирог со свежими ягодами",
+    "price": 240,
+    "composition": [
+      "Мука",
+      "Ягоды",
+      "Сахар",
+      "Масло",
+      "Яйца"
+    ],
+    "weight": 200,
+    "calories": 400,
+    "category": "Выпечка"
+  },
+  {
+    "id": "30",
+    "img": "https://avatars.mds.yandex.net/i?id=892b83cd32fc48fcd98c866f8f3a4804c7b6629d-4767909-images-thumbs&n=13",
+    "name": "Чизкейк",
+    "description": "Выпечка с сыром и ягодами",
+    "price": 260,
+    "composition": [
+      "Сыр",
+      "Мука",
+      "Яйца",
+      "Сахар",
+      "Ягоды"
+    ],
+    "weight": 180,
+    "calories": 420,
+    "category": "Выпечка"
+  }
+]

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/catalog-style.css">
+    <link rel="stylesheet" href="../css/toaster.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <title>ClouBakery</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-logo">CloudBakery</div>
+        <nav class="header-navigation">
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+                <li><a href="main.html#footer">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="header-button" id="login-button">Вход</button>
+    </header>
+    <div class="modal-overlay" id="modal">
+        <iframe src="auth.html"></iframe>
+    </div>
+    <main class="main-container">
+        <nav class="nav-categories">
+            <ul class="nav-categories-list">
+                <li class="nav-categories-list-item"><button>Торты</button></li>
+                <li class="nav-categories-list-item"><button>Капкейки</button></li>
+                <li class="nav-categories-list-item"><button>Макаруны</button></li>
+                <li class="nav-categories-list-item"><button>Пирожные</button></li>
+                <li class="nav-categories-list-item"><button>Печенье</button></li>
+                <li class="nav-categories-list-item"><button>Выпечка</button></li>
+            </ul>
+            <div class="seach-form">
+                <input type="text" placeholder="Поиск...">
+            </div>
+        </nav>
+        <div class="products-container" id="products-container">
+        </div>
+        <div class="modal-overlay" id="product-modal">
+            <iframe src="card.html" style="height: 100%; margin-left: 25%;"></iframe>
+        </div>
+        <div id="notification-container"></div>
+    </main>
+    <footer class="footer-container">
+        <div class="content">
+            <div class="left-content">
+                <h1 class="header-logo">CloudBakery</h1>
+                <div class="btns"> 
+                    <button><img src="../img/tg.png" alt=""></button>
+                    <button><img src="../img/insta.png" alt=""></button>
+                </div>
+            </div>
+            <p>© 2025 CloudBakery. Все права защищены.️</p>
+        </div>
+    </footer>
+    <script src="../js/catalog.js"></script>
+    <script src="../js/global.js"></script>
+</body>
+</html>

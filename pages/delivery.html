@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/delivery-style.css">
+    <link rel="stylesheet" href="../css/toaster.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">   
+    <link rel="preconnect" href="https://fonts.gstatic.com"    crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <title>ClouBakery</title>
+</head>
+<body>
+    <div class="container">
+        <div class="delivery-content">
+            <div class="donut">
+                <img src="../img/pic.png" alt="">
+            </div>
+            <div class="main-form">
+                <div class="title">
+                    <h1>Доставка</h1>
+                    <div class="close-icon" id="close-delivery-modal">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 5L19 19" stroke="#707070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>   
+                            <path d="M19 5L5 19" stroke="#707070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div> 
+                </div>
+                <div class="input-boxes">
+
+                    <div class="delivery-form__input-group">
+                        <input type="text" class="delivery-form__input" placeholder="Ваше имя">
+                    </div>
+
+                    <div class="delivery-form__input-group">
+                        <input type="tel" class="delivery-form__input" placeholder="Телефон">
+                    </div>
+
+                    <div class="delivery-form__radio-group">
+                        <label class="delivery-form__radio-label">
+                            <input type="radio" class="delivery-form__radio-input" name="delivery-type" value="pickup" checked>
+                            Самовывоз
+                        </label>
+                        <label class="delivery-form__radio-label">
+                            <input type="radio" class="delivery-form__radio-input" name="delivery-type" value="delivery">
+                            Доставка
+                        </label>
+                    </div>
+
+                    <div class="delivery-form__input-group" id="addressFields">
+                        <input type="text" class="delivery-form__input" placeholder="Улица, дом, квартира">
+                    </div>
+
+                    <div class="delivery-form__input-group" id="extraFields" style="display: flex; gap: 15px;">
+                        <input type="text" class="delivery-form__input" style="width: calc(50% - 8px);" placeholder="Этаж">
+                        <input type="text" class="delivery-form__input" style="width: calc(50% - 8px);" placeholder="Домофон">
+                    </div>
+
+                </div>
+                <button class="delivery-form__submit">Оформить</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/delivery.js"></script>
+</html>

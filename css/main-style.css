@@ -1,0 +1,356 @@
+html{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 900;
+    margin: 0;
+    background-color: #F9EEFB;
+}
+
+body{
+    margin: 0;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 4px 4px 8px 0px #EBE1F4;
+    -moz-box-shadow: 4px 4px 8px 0px #EBE1F4;
+    box-shadow: 4px 4px 8px 0px #EBE1F4;
+    padding: 23px 200px;
+    align-items: center;
+}
+
+.header-logo{
+    font-size: 38px;
+    color: #DB2777;
+}
+
+.header-navigation ul{
+    display: flex;
+    gap: 45px;
+    list-style-type: none;
+}
+
+.header-navigation ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-button{
+    width: 172px;
+    height: 44px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    background-color: #EC4899;
+    border-style: none;
+    border-radius: 28px;
+    color: #EBE1F4;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+}
+
+.modal-overlay iframe {
+    width: 900px;
+    height: 950px;
+    border: none;
+    border-radius: 8px;
+}
+
+.wlc-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 150px;
+}
+
+.left-text-content{
+    padding: 0 75px;
+}
+
+.left-text-content h1{
+    font-size: 64px;
+    color: #1F2937;
+}
+
+.left-text-content p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #1F2937;
+}
+
+.left-text-content-btns{
+    padding: 40px 0;
+    display: flex;
+    gap: 40px;
+}
+
+.left-text-content-btns button{
+    padding: 20px 30px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    background-color: #EC4899;
+    border-style: none;
+    border-radius: 28px;
+    color: #EBE1F4;
+    transition: all 0.35s ease-in-out;
+}
+
+.left-text-content-btns button:hover{
+    scale: 1.03;
+}
+
+#order-btn{
+    background-color: #F9EEFB;
+    color: #EC4899;
+    border: solid;
+    border-width: 1px;
+    border-color: #EC4899;
+}
+
+.about-us-content{
+    padding: 60px 150px;
+    background-color: #FFFFFF;
+}
+
+.about-us-content h1{
+    font-size: 54px;
+    text-align: center;
+}
+
+.about-us-content h1 mark{
+    background: none;
+    color: #EC4899;
+}
+
+.about-us-content-items{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item{
+    width: 480px;
+    height: 210px;
+    border-radius: 10px;
+    background-color: #FDF2F8;
+    -webkit-box-shadow: 0px 5px 10px 7px #EBE1F4;
+    -moz-box-shadow: 0px 5px 10px 7px #EBE1F4;
+    box-shadow: 0px 5px 10px 7px #EBE1F4;
+}
+
+.logo{
+    margin:15px 205px 0 205px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #FCE7F3;
+    font-size: 32px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.item h1{
+    font-size: 24px;
+    text-align: center;
+}
+
+.item p{
+    font-size: 14px;
+    text-align: center;
+}
+
+.recomendations-content{
+    padding: 70px 150px;
+}
+
+.recomendations-content h1{
+    font-size: 54px;
+    text-align: center;
+}
+
+.products-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.product{
+    width: 380px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    transition: all 0.5s ease;
+}
+
+.product:hover{
+    scale: 1.01;
+}
+
+.product img{
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    width: 380px;
+    height: 375px;
+}
+
+.product a{
+    text-decoration: none;
+    color: black;
+}
+
+.product h1{
+    font-size: 24px;
+    padding: 20px 27px;
+    text-align: start;
+    margin: 0;
+}
+
+.product h2{
+    font-size: 20px;
+    padding: 20px 27px;
+    text-align: start;
+    margin: 0;
+}
+
+.stocks-content{
+    padding: 70px 150px;
+}
+
+.stocks-content h1{
+    font-size: 54px;
+    text-align: center;
+}
+
+.stocks-content h1 mark{
+    background: none;
+    color: #EC4899;
+}
+
+.images-container{
+    display: flex;
+    gap: 43px;
+}
+
+
+.images-container img{
+    transition: all 0.45s ease;
+}
+
+.images-container img:hover{
+    scale: 1.01;
+}
+
+.more-images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.more-images img{
+    object-fit: inherit;
+    width: 374.21px;
+    height: 189px;
+    gap: 0;
+    border-radius: 10px;
+}
+
+.payment-content{
+    padding: 70px 150px;
+}
+
+.payment-content h1{
+    font-size: 54px;
+    text-align: center;
+    color: #EC4899;
+}
+
+.payment-blocks{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block{
+    width: 378.66px;
+    height: 154.44px;
+    background-color: #FFFFFF;
+    border-radius: 14px;
+    -webkit-box-shadow: 0px 5px 10px 7px #EBE1F4;
+    -moz-box-shadow: 0px 5px 10px 7px #EBE1F4;
+    box-shadow: 0px 5px 10px 7px #EBE1F4;
+}
+
+.block p{
+    justify-content: center;
+    text-align: center;
+    margin-top: 73px;
+}
+
+.payment-logo{
+    position: absolute;
+    width: 114.34px;
+    height: 114.34px;
+    border-radius: 50%;
+    margin: -43px 132px;
+    background-color: #FFFFFF;
+}
+
+.payment-logo img{
+    display: grid;
+    align-items: center;
+    margin: 25.24px;
+}
+
+.payment-map{
+    margin: 58px 0;
+    border-radius: 14px;
+}
+
+.footer-container{
+    padding: 20px 150px;
+    background-color: #FDF2F8;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 72px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.btns button{
+    border: solid;
+    border-radius: 13px;
+    border-color: #E3ECF5;
+    padding: 11px 36px;
+    background-color: #FDF2F8;
+    border-width: 0.5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover{
+    scale: 1.07;
+}

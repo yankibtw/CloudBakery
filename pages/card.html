@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/card-style.css">
+    <link rel="stylesheet" href="../css/toaster.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <title>ClouBakery</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card-content">
+            <div class="card-title">
+                <h1>Шоколадный брауни</h1>
+                <div class="close-icon" id="close-product-modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 5L19 19" stroke="#707070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 5L5 19" stroke="#707070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>           
+            </div>
+            <div class="card-main-content">
+                <img src="../img/brauni.png" alt="">         
+                <div class="card-text-content">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h3>
+                    <p style="margin-top: 15px;">Состав:</p>
+                    <ul class="card-structure-list">
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                    </ul>
+                    <p id="kbju">520г, ккал 430</p>
+                </div>
+            </div>
+            <div class="card-btns">
+                <button id="add-btn">Добавить</button>
+                <div class="qty-btn">
+                    <button>-</button>
+                    <p>1</p>
+                    <button>+</button>
+                </div>
+                <p class="card-product-cost">550₽</p>
+            </div>
+        </div>
+    </div>
+<script src="../js/card.js"></script>
+</body>
+</html>

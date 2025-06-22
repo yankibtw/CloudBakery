@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/auth-style.css">
+</head>
+<body>
+  <!-- Форма ввода телефона -->
+  <div id="phone-form" class="auth-container">
+    <div class="auth-container-header">
+      <h2 class="auth-title">Вход на сайт</h2>
+      <div class="close-button" id="close-modal">❌</div>
+    </div>
+    <form class="auth-form">
+      <label for="phone" class="auth-label">Номер телефона</label>
+      <input type="tel" id="phone" placeholder="+7 999 999-99-99" class="auth-input">
+    </form>
+    <div style="display: flex; gap: 26px; align-items: center;">
+      <button type="button" class="send-code-button" id="sendCodeBtn">Выслать код</button>
+      <p class="agreement-text">
+        Продолжая, вы соглашаетесь с <a href="#">обработкой персональных данных</a> и <a href="#">пользовательским соглашением</a>.
+      </p>
+    </div>
+  </div>
+
+  <!-- Форма ввода кода -->
+  <div id="code-form" class="auth-container" style="display:none; flex-direction: column;">
+    <div class="auth-container-header">
+      <h2 class="auth-title">Вход на сайт</h2>
+      <div class="close-button" id="close-modal-code">❌</div>
+    </div>
+    <form class="auth-form" style="align-items: flex-start; flex-direction: column; margin-bottom: 46px;">
+      <div style="display: flex; gap: 35px; align-items: center;">
+        <p class="auth-label">Номер телефона:</p>
+        <p class="auth-label" id="shown-phone">+7</p>
+        <span class="underline-text" id="changePhoneBtn" style="cursor:pointer;">Изменить</span>
+      </div>
+      <div style="display: flex; gap: 25px; align-items: center;">
+        <label for="code" class="auth-label">Код из СМС:</label>
+        <input type="tel" id="code" placeholder="1234" class="auth-input">
+      </div>
+      <button type="button" class="send-code-button" id="authBtn" style="margin-top: 20px;">Войти</button>
+    </form>
+  </div>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

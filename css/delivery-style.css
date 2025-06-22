@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;  
+}
+
+.delivery-content {
+    display: flex;
+    gap: 55px;
+    width: 684px;
+    border-radius: 24px;
+    box-shadow: 4px 4px 116px 4px rgba(2, 2, 2, 0.4); 
+    padding: 24px;
+    background-color: #fff;
+}
+
+.donut{
+    background-color: #D32B9A; 
+    display: flex; 
+    align-items: center;
+    margin: -24px;
+    border-radius: 24px 0 0 24px;
+}
+
+.title{
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.close-icon {
+    display: inline-block;  
+    cursor: pointer;
+}
+
+.delivery-form__input-group{
+    margin-bottom: 30px;
+}
+
+.delivery-form__input{
+    font-family: 'Comfortaa', sans-serif;
+    width: 357px;
+    padding: 14px;  
+    border: solid;
+    border-width: 0.2px;
+    border-color: #F2F2F3;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.delivery-form__radio-group {
+    margin-bottom: 30px;
+}
+
+.delivery-form__radio-label {
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.delivery-form__radio-input {
+    margin-right: 8px;
+}
+
+.delivery-form__submit {
+    font-family: 'Comfortaa', sans-serif;
+    background-color: #D32B9A;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#addressFields,
+#extraFields {
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+#addressFields.show,
+#extraFields.show {
+    visibility: visible;
+    max-height: 200px; 
+}

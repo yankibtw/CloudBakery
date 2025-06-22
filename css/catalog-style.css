@@ -1,0 +1,231 @@
+html{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 900;
+    height: 100%;
+    margin: 0;
+    background-color: #F9EEFB;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+  flex: 1;
+} 
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 4px 4px 8px 0px #EBE1F4;
+    -moz-box-shadow: 4px 4px 8px 0px #EBE1F4;
+    box-shadow: 4px 4px 8px 0px #EBE1F4;
+    padding: 23px 200px;
+    align-items: center;
+}
+
+.header-logo{
+    font-size: 38px;
+    color: #DB2777;
+}
+
+.header-navigation ul{
+    display: flex;
+    gap: 45px;
+    list-style-type: none;
+}
+
+.header-navigation ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-button{
+    width: 172px;
+    height: 44px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    background-color: #EC4899;
+    border-style: none;
+    border-radius: 28px;
+    color: #EBE1F4;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+}
+
+.modal-overlay iframe {
+    width: 900px;
+    height: 950px;
+    border: none;
+    border-radius: 8px;
+}
+
+.main-container{
+    padding: 70px 150px;
+}
+
+.nav-categories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-categories-list{
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-categories-list button{
+    background-color: #FFFFFF;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 900;
+    color: #EC4899;
+    border-radius: 50px;
+    border: solid;
+    border-color: #EC4899;
+    border-width: 0.5px;
+    font-size: 22px;
+    padding: 11px 25px;
+}
+
+.nav-categories-list button:hover{
+    cursor: pointer;
+}
+
+#active{
+    color: #FFFFFF;
+    background-color: #EC4899;;
+}
+
+.seach-form input{
+    background-color: #FFFFFF;
+    font-family: "Comfortaa", sans-serif;
+    width: 300px;
+    font-weight: 900;
+    color: #EC4899;
+    border-radius: 10px;
+    border: solid;
+    border-color: #EC4899;
+    border-width: 0.5px;
+    font-size: 22px;
+    padding: 11px 36px;
+}
+
+.seach-form{
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+.products-container{
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 70px 0;
+}
+
+.product{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    margin-bottom: 35px;
+    transition: all 0.5s ease;
+}
+
+.product:hover{
+    scale: 1.01;
+}
+
+.product p {
+    padding: 0 27px;
+    margin: 0;
+}
+
+.product img{
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    width: 380px;
+    height: 375px;
+}
+
+.product h1{
+    font-size: 24px;
+    padding: 20px 27px;
+    padding-bottom: 10px;
+    text-align: start;
+    margin: 0;
+}
+
+.product h2{
+    font-size: 20px;
+    padding: 20px 27px;
+    text-align: start;
+    margin: 0;
+}
+
+.text-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content a img{
+    padding: 20px 27px;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-container{
+    padding: 20px 150px;
+    background-color: #FDF2F8;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 72px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.btns button{
+    border: solid;
+    border-radius: 13px;
+    border-color: #E3ECF5;
+    padding: 11px 36px;
+    background-color: #FDF2F8;
+    border-width: 0.5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover{
+    scale: 1.07;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cart-style.css">
+    <link rel="stylesheet" href="../css/toaster.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <title>ClouBakery</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-logo">CloudBakery</div>
+        <nav class="header-navigation">
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+                <li><a href="main.html#footer">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="header-button" id="login-button">Вход</button>
+    </header>
+    <div class="modal-overlay" id="modal">
+        <iframe src="auth.html"></iframe>
+    </div>
+    <main class="main-container">
+        <h1 class="title">Корзина</h1>
+        <h2 class="title" style="font-size: 24px;" id="nonAuth">Авторизируйтесь, чтобы увидеть корзину!</h2>
+        <div class="cart-items" id="cart-items-container">
+        </div>
+        <div class="another-data" id="cart-info">
+            <div class="exit-data">
+                <h1>Сумма заказа:   <mark>1 048 ₽</mark></h1>
+                <button class="apply-button">Оформить заказ</button>
+            </div>
+        </div>
+    </main>
+    <div class="modal-overlay" id="delivery-modal">
+        <iframe src="delivery.html" style="height: 100%; margin-left: 25%;"></iframe>
+    </div>
+    <div id="notification-container"></div>
+    <footer class="footer-container">
+        <div class="content">
+            <div class="left-content">
+                <h1 class="header-logo">CloudBakery</h1>
+                <div class="btns"> 
+                    <button><img src="../img/tg.png" alt=""></button>
+                    <button><img src="../img/insta.png" alt=""></button>
+                </div>
+            </div>
+            <p>© 2025 CloudBakery. Все права защищены.️</p>
+        </div>
+    </footer>
+    <script src="../js/global.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

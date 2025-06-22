@@ -1,0 +1,253 @@
+html{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 900;
+    height: 100%;
+    margin: 0;
+    background-color: #F9EEFB;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-container {
+  flex: 1;
+} 
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 4px 4px 8px 0px #EBE1F4;
+    -moz-box-shadow: 4px 4px 8px 0px #EBE1F4;
+    box-shadow: 4px 4px 8px 0px #EBE1F4;
+    padding: 23px 200px;
+    align-items: center;
+}
+
+.header-logo{
+    font-size: 38px;
+    color: #DB2777;
+}
+
+.header-navigation ul{
+    display: flex;
+    gap: 45px;
+    list-style-type: none;
+}
+
+.header-navigation ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header-button{
+    width: 172px;
+    height: 44px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    background-color: #EC4899;
+    border-style: none;
+    border-radius: 28px;
+    color: #EBE1F4;
+    box-shadow: 4px 4px 116px 4px rgba(2, 2, 2, 0.4); 
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+}
+
+.modal-overlay iframe {
+    width: 900px;
+    height: 950px;
+    border: none;
+    border-radius: 8px;
+}
+
+.main-container{
+    padding: 70px 200px;
+}
+
+.title{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 36px;
+    color: #DB2777;
+}
+
+.cart-items{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.item{
+    display: flex;
+    gap: 213px;
+    align-items: center;
+    border: solid;
+    border-width: 0.5px;
+    border-radius: 15px;
+    padding: 15px;
+    border-color: #ECECF1;
+}
+
+.item img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-text-content{
+    width: 350px;
+}
+
+.item-text-content p{
+    color: #686466;
+}
+
+.item-price{    
+    width: 10%;
+    color: #DB2777;
+    font-size: 24px;
+}
+
+.qty-btn{
+    padding: 0 15px 0 15px;
+    background-color: #F2F2F3;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    border-radius: 12px;
+}
+
+.qty-btn button{
+    border: none;
+    cursor: pointer;
+}
+
+.trash-button {
+    display: inline-block;
+    padding: 10px 15px; 
+    background-color: #F9EEFB;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ff69b4; 
+    transition: 0.3s ease;
+}
+
+.trash-button:hover {
+    scale: 1.05;
+}
+
+.trash-button:focus {
+    outline: none;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    max-width: 400px;
+}
+
+
+.input-field {
+    flex: 1; 
+    padding: 13px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.apply-button {
+    font-family: "Comfortaa", sans-serif;
+    padding: 13px 32px;
+    background-color: #DB2777;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.8s ease;
+    height: 45px;
+}
+
+.apply-button:hover {
+    background-color: #FAEFFA; 
+    color: #DB2777;
+    border: solid;
+    border-width: 0.1px;
+    border-color: #DB2777;
+}
+
+.apply-button:focus {
+    outline: none;
+}
+
+.another-data {
+    margin-top: 52px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exit-data mark{
+    color: #DB2777;
+    background-color: #FAEFFA   ;
+}
+
+.footer-container{
+    padding: 20px 150px;
+    background-color: #FDF2F8;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 72px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.btns button{
+    border: solid;
+    border-radius: 13px;
+    border-color: #E3ECF5;
+    padding: 11px 36px;
+    background-color: #FDF2F8;
+    border-width: 0.5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btns button:hover{
+    scale: 1.07;
+}

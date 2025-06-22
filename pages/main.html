@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main-style.css">
+    <link rel="stylesheet" href="../css/toaster.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <title>ClouBakery</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-logo">CloudBakery</div>
+        <nav class="header-navigation">
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+                <li><a href="main.html#footer">Контакты</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="header-button" id="login-button">Вход</button>
+    </header>
+    <div class="modal-overlay" id="modal">
+        <iframe src="auth.html"></iframe>
+    </div>
+    <main class="main-container">
+        <div class="wlc-content">
+            <div class="left-text-content">
+                <h1>Вкус облаков в<br> каждом кусочке</h1>
+                <p>Авторские десерты, сделанные с любовью. <br>Доставим радость вам домой</p>
+                <div class="left-text-content-btns">
+                    <button id="menu-btn" onclick="window.location.href='catalog.html'">Посмотреть меню</button>
+                    <button id="order-btn" onclick="window.location.href='cart.html'">Оформить заказ</button>
+                </div>
+            </div>
+            <div class="right-block-content">
+                <img src="../img/photo-content.png" alt="">
+            </div>
+        </div>
+        <div class="about-us-content">
+            <h1>Почему выбирают <mark>CloudBakery</mark>?</h1>
+            <div class="about-us-content-items">
+                <div class="item">
+                    <div class="logo">✨</div>
+                    <h1>Авторские десерты</h1>
+                    <p>Каждый десерт создается с заботой и вниманием <br>к деталям</p>
+                </div>
+                <div class="item">
+                    <div class="logo">💞</div>
+                    <h1>Instagram-красота</h1>
+                    <p>Десерты сделаны так, чтобы  их хотелось сфотографировать</p>
+                </div>
+                <div class="item">
+                    <div class="logo">🕑</div>
+                    <h1>Быстрая доставка</h1>
+                    <p>Гарантируем свежесть и оперативную доставку в день заказа</p>
+                </div>
+            </div>  
+        </div>
+        <div class="recomendations-content">
+            <h1>Рекомендуемая выпечка</h1>
+            <div class="products-container">
+            </div>
+        </div>
+        <div class="stocks-content">
+            <h1>Наши <mark>акции</mark></h1>
+            <div class="images-container">
+                <img src="../img/sale_1.png" alt="" style="min-width: 771px; height: 403px; object-fit: cover; border-radius: 10px;">
+                <div class="more-images">
+                    <img src="../img/sale_2.png" alt="">
+                    <img src="../img/sale_3.png" alt="">
+                    <img src="../img/sale_4.png" alt="">
+                    <img src="../img/sale_5.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="payment-content">
+            <h1>Оплата и доставка</h1>
+            <div class="payment-blocks">
+                <div class="block">
+                    <div class="payment-logo"><img src="../img/shop.png" alt=""></div>
+                    <p>Заберите заказ в удобное для вас время из нашего магазина</p>
+                </div>
+                <div class="block">
+                    <div class="payment-logo"><img src="../img/delivery_car.png" alt=""></div>
+                    <p>Просто оформите заказ — остальное сделаем мы</p>
+                </div>
+                <div class="block">
+                    <div class="payment-logo"><img src="../img/accept.png" alt=""></div>
+                    <p>Оплачивайте картой онлайн или при получении</p>
+                </div>
+                <div class="block">
+                    <div class="payment-logo"><img src="../img/delivery_time.png" alt=""></div>
+                    <p>Быстрая и надёжная доставка прямо до двери</p>
+                </div>
+            </div>
+        </div>
+        <div id="notification-container"></div>
+    </main>
+    <footer class="footer-container" id="footer">
+        <div class="content">
+            <div class="left-content">
+                <h1 class="header-logo">CloudBakery</h1>
+                <div class="btns"> 
+                    <button><img src="../img/tg.png" alt=""></button>
+                    <button><img src="../img/insta.png" alt=""></button>
+                </div>
+            </div>
+            <p>© 2025 CloudBakery. Все права защищены.️</p>
+        </div>
+    </footer>
+    <script src="../js/global.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

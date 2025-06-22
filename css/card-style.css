@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;  
+}
+
+.card-content {
+    width: 684px;
+    border-radius: 24px;
+    box-shadow: 4px 4px 116px 4px rgba(2, 2, 2, 0.4); 
+    padding: 25px;
+    background-color: #fff;
+}
+
+.card-title h1{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.card-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-main-content{
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.card-main-content img{
+    width: 276px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.card-text-content{
+    max-width: 344px;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.card-structure-list{
+    margin-top: 5px;
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.5;
+}
+
+#kbju{
+    margin-top: 10px;
+    color: #B1B1B1;
+}
+
+.card-btns{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-btns button{
+    border: none;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 16px; 
+    padding: 0;
+}
+
+#add-btn{
+    width: 276px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #EC4899;
+    color: #fff;
+    transition: 0.6s ease;
+}
+
+#add-btn:hover{
+    border: solid;
+    border-width: 0.1px;
+    border-color: #EC4899;
+    color: #EC4899;
+    background-color: #fff;;
+    cursor: pointer;
+}
+
+.qty-btn{
+    background-color: #F2F2F3;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    border-radius: 12px;
+}
+
+.qty-btn button{
+    border-radius: 12px;
+    padding: 15px 15px;
+}
+
+.qty-btn button:hover{
+    cursor: pointer;
+}
+
+.card-product-cost{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    font-weight: 900; 
+    margin: 15px;
+}
+
+.close-icon {
+    display: inline-block;
+    cursor: pointer;
+}
